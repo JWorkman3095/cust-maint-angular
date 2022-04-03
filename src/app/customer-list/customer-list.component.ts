@@ -7,11 +7,13 @@ import { Customer } from '../models/customer.class';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
-
+  tblHdStyle: string = "text-danger fst-italic";
   customers: Customer[] = [
     new Customer(1, "MAX", "OH"),
     new Customer(2, "PG", "OH"),
-    new Customer(3, "Target", "MN")
+    new Customer(3, "Target", "MN"),
+    new Customer(4, "GC", "WA"),
+    new Customer(5, "Sam Ash", "OH")
   ]
 
   constructor() { }
